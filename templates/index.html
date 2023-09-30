@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guessing Game</title>
+</head>
+<body>
+    <h2>I'm guessing: {{ guess }}</h2>
+    <form action="/" method="post">
+        <input type="hidden" name="min_val" value="{{ min_val }}">
+        <input type="hidden" name="max_val" value="{{ max_val }}">
+        <button type="submit" name="action" value="Too small">Too small</button>
+        <button type="submit" name="action" value="Too big">Too big</button>
+        <button type="submit" name="action" value="You win">You win</button>
+    </form>
+</body>
+</html>
